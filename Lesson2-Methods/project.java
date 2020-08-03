@@ -5,10 +5,10 @@ class Project {
         When it comes to improving patient care, redundancy may not be a bad thing. This is as long as
         patient care is stream-lined.
 
-        A nurse is assigned the task of checking the vitals of 6 patients in 3 different rooms.
+        A student is assigned the task of checking the vitals of 6 patients in 3 different rooms.
         Vitals include: Heart Rate, O2 saturation, Blood Pressure, Temperature
 
-        The goal is to display the steps that the nurse must go through to achieve this task.
+        The goal is to display the steps that the student must go through to achieve this task.
 
         The expected output is:
         ```
