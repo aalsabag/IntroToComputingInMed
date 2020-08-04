@@ -11,11 +11,20 @@ class Project {
         2. Write each calculation in its own separate static method.
         
         The methods will be:
-        calculateO2() 
+        calculateO2() - given 2 values concentration of deoxygenated hemoglobin, and 
+        concentration of oxygenated hemoglobin.
+        O2Saturation = C(HbO2)/(C(HbO2) + C(Hb)) * 100%
+        OUTPUT: The oxygen saturation given a deoxygenated hemoglobin concentration of
+        90 and an oxygenating hemogloving concentration of 10 is 90%
 
-        calculateBMI()
+        calculateBMI() - given 2 value of weight (lbs) and height in inches, calculate BMI.
+        Body mass index, kg/m2 = weight, kg / (height, m)2
+        remember to convert units!!
+        OUTPUT: The BMI of a 165 lb male of height 69 inches is 24.4 kg/m^2
 
-        calculateBMIPrime()
+        calculateBMIPrime() - same as above, but divide by by 25. result is unit less
+        https://en.wikipedia.org/wiki/Body_mass_index#BMI_prime
+        OUTPUT: The BMI Prime of a 165 lb male of height 69 inches is .976
 
         calculateCreatineClearance() - given 3 values of age in years, weight in lbs,
         and creatine concentration in mg/dL calculate the creatine clearance to assess 
