@@ -42,4 +42,8 @@ class Project {
         */
         
     }
+
+    public static void calculateBMI(){
+        // Fill this method out
+    }
 }
