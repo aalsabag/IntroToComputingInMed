@@ -1,4 +1,4 @@
-class Project {
+class Project3 {
     public static void main(String args[]) {
         /*
         There are a lot of calculations those in medicine might need to perform.

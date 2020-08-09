@@ -1,5 +1,5 @@
 
-class Lesson {
+class Lesson2 {
     //This is the main method. It's where our program will be executing
     public static void main(String args[]) {
         /*

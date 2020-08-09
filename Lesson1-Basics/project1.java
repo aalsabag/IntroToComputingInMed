@@ -1,4 +1,4 @@
-class Project {
+class Project1 {
     public static void main(String args[]) {
         /*
         This is a very basic project to test whether or not you

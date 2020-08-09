@@ -1,4 +1,4 @@
-class Project {
+class Project2 {
     public static void main(String args[]) {
         /*
         https://www.todayshospitalist.com/When-it-comes-to-improving-patient-care-redundancy-is-not-a-bad-thing/

@@ -1,4 +1,4 @@
-class Lesson {
+class Lesson4 {
 
     public static void main (String args[]){
         System.out.println("Hello World!!");
@@ -22,7 +22,21 @@ class Lesson {
         }
         // Notice that this printed starting from 0 (i = 0) and ended at 4, the
         // last number that satisfies i < 5
-        
+
+        // We can use expressions too
+        int a = 20;
+        for (int i=2; i< a/2; i++){ // 2 to 9 (less than 10 (<10))
+            System.out.println(i);
+        }
+
+        // So what happens when we put a loop inside a loop
+        for (int i=0; i<10; i++){
+            for (int j=0; j<5; j++){ // we have to use a different variable (j) since we're already using (i)
+                System.out.print(i*j + " ");
+            }
+            System.out.println();
+        }
+        // A times table!!!!!!!
     }
     
 }
