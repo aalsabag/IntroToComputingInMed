@@ -14,7 +14,15 @@ class Lesson {
         //  `int i=0;` this declares a variable called i and sets it to 0
         // `i<5;` defines the condition at which we should stop, when i is no longer less than 5
         // i++ defines how much to increment by. i++ notation means increment by 1,
-        // that mean i-- means decrement by 1. i+=3 means increment by 3. i-=3 means decrement by 3, etc         
+        // that mean i-- means decrement by 1. i+=3 means increment by 3. i-=3 means decrement by 3, etc      
+        
+        // The value of i changes in every iteration
+        for (int i=0; i<5; i++){
+            System.out.println(i); // 0,1,2,3,4
+        }
+        // Notice that this printed starting from 0 (i = 0) and ended at 4, the
+        // last number that satisfies i < 5
+        
     }
     
 }
