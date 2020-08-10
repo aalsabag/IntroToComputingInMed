@@ -30,8 +30,8 @@ class Lesson4 {
         }
 
         // So what happens when we put a loop inside a loop
-        for (int i=0; i<10; i++){
-            for (int j=0; j<5; j++){ // we have to use a different variable (j) since we're already using (i)
+        for (int i=1; i<=10; i++){
+            for (int j=1; j<=5; j++){ // we have to use a different variable (j) since we're already using (i)
                 System.out.print(i*j + " ");
             }
             System.out.println();
