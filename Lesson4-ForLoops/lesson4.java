@@ -37,6 +37,26 @@ class Lesson4 {
             System.out.println();
         }
         // A times table!!!!!!!
+        // What is the difference between (<=) and (<) . (<=) is inclusive which is why 10 is included! 
+        // It satisfies i <= 10
+
+        // The most important thing is to keep track of the loop variables (i) and (j)
+        // REMEMBER the names do not matter, consistency does. This is the same things as above:
+        for (int outerLoop=1; outerLoop<=10; outerLoop++){
+            for (int innerLoop=1; innerLoop<=5; innerLoop++){
+                System.out.print(outerLoop*innerLoop + " ");
+            }
+            System.out.println();
+        }
+
+        // This might be hard to think about, but what does this code do:
+        for (int i=1; i<=10; i++){
+            for (int j=1; j<=i*2; j++){ 
+                System.out.print(j*j + " ");
+            }
+            System.out.println();
+        }
+
     }
     
 }
