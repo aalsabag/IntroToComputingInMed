@@ -57,6 +57,63 @@ class Lesson4 {
             System.out.println();
         }
 
+        // Lets try to draw some ascii art using some of the concepts we discussed about here
+        // as well as some concepts discussed in lesson 2 about methods. Our task is to draw:
+        /*
+        ---*---
+        --***--
+        -*****-
+        -*****-
+        --***--
+        ---*---
+        */
+        // Lets start by creating two methods, one for the topHalf and the other for the bottomHalf
+        topHalf();
+        bottomHalf();
+
+    }
+
+    public static void topHalf(){
+        for (int i=1; i<=3; i++){ // the top half consists of 3 rows
+            // We can derive the formula #stars = 2i-1
+            // Which means #dashes = 7 - #stars
+            // Which means #dashesOnEachSide = #dashes/2
+            int stars = 2*i-1;
+            int dashes = 7 - stars;
+            int dashesOnEachSide = dashes/2;
+            for (int j=1; j<=dashesOnEachSide; j++){
+                System.out.print("-");
+            }
+            for (int j=1; j<=stars; j++){
+                System.out.print("*");
+            }
+            for (int j=1; j<=dashesOnEachSide; j++){
+                System.out.print("-");
+            }
+
+            System.out.println(); // new line
+        }
+
+    }
+
+    public static void bottomHalf(){
+        for (int i=3; i>=1; i--){
+            int stars = 2*i-1;
+            int dashes = 7 - stars;
+            int dashesOnEachSide = dashes/2;
+            for (int j=1; j<=dashesOnEachSide; j++){
+                System.out.print("-");
+            }
+            for (int j=1; j<=stars; j++){
+                System.out.print("*");
+            }
+            for (int j=1; j<=dashesOnEachSide; j++){
+                System.out.print("-");
+            }
+
+            System.out.println(); // new line
+        }
+
     }
     
 }
