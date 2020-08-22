@@ -24,7 +24,28 @@ class Lesson7 {
         System.out.println("You are " + age + " years old");
         // console.close(); // Once you are done with a console it is important to close it for proper clean up. There is a better way, but we will cover that at a later time.
 
+        // Conditionals
+        // An if block executes only if a condition is true
+        // You would use it like this:
+        int grade = 91;
+        if (grade >= 90) { // if your grade is greater than or equal to 90
+            System.out.println("You got an A");
+        }
 
+        // In the example above we used the >= operator to indicate greater than or equal to
+        // There are other operators to
+        // == equals
+        // != does not equals
+        // < less than;  <= less than or equal to
+        // > greather than; >= greater than or equal to
+
+        if (3 != 3) { // What does this mean?
+            System.out.println("This should never print");
+        }
         
+        // What happens when we want to combine conditions
+        // We have && to indicate AND and || to indicate OR
+        int grade2 = 85;
+
     }
 }
