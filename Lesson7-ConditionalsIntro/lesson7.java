@@ -45,7 +45,28 @@ class Lesson7 {
         
         // What happens when we want to combine conditions
         // We have && to indicate AND and || to indicate OR
-        int grade2 = 85;
+        int grade2 = 88;
+        if ( (grade2 >= 87) && (grade2 < 90)){ // && indicates both conditions must be met
+            System.out.println("You got a B+");
+        }
 
+        char letterGrade = "B";
+        if ((letterGrade == "A") || (letterGrade == "B") || (letterGrade == "C")) {
+            System.out.println("You passed");
+        }
+
+        // You can also define what to do if a condition is not met with and else or and else if block
+        int grade3 = 71;
+        if (grade3 >=90) {
+            System.out.println("You got an A");
+        } else if ((grade3 >=80) && (grade3 <90)){
+            System.out.println("You got a B");
+        } else if ((grade3 >=70) && (grade3 <80)){
+            System.out.println("You got a C");
+        } else if ((grade3 >=60) && (grade3 <70)){
+            System.out.println("You got a D");
+        } else { // "else" alone means if none of the above conditionals are met, we do the following
+            System.out.println("You got a F");
+        }
     }
 }
