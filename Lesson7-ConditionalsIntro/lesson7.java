@@ -68,5 +68,22 @@ class Lesson7 {
         } else { // "else" alone means if none of the above conditionals are met, we do the following
             System.out.println("You got a F");
         }
+
+        // It is important to understand the difference between a bunch of if conditionals and an if/else if combo
+        // What is wrong with this:
+
+        int grade4 = 81;
+        if (grade4 >=90) {
+            System.out.println("You got an A");
+        }
+        if (grade4 >=80) {
+            System.out.println("You got an B");
+        }
+        if (grade4 >=70) {
+            System.out.println("You got an C");
+        }
+        if (grade4 >=60) {
+            System.out.println("You got an D");
+        }
     }
 }
