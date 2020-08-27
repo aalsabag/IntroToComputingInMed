@@ -86,4 +86,10 @@ class Lesson7 {
             System.out.println("You got an D");
         }
     }
+
+    public static int returnExample(int a, int b){
+        if (a>b){
+            return a;
+        }// wont compile!!
+    }
 }
