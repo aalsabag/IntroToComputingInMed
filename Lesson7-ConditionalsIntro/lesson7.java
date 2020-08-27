@@ -85,11 +85,56 @@ class Lesson7 {
         if (grade4 >=60) {
             System.out.println("You got an D");
         }
+
+        // When returning a value, all possible exits must have a return value.
+        // Let's look at returnGreaterBad(int a, int b) and returnGreaterGood(int a, int b)
+
+        // Formatting
+        // You may have realized by now that having a pretty print statement isn't always fun
+        // Formatted printing allows you to put placeholders in your string. The common placeholders
+        // are %d (integer), %f (real number), %s (string)
+        String name = "John";
+        int yearsOld = 35;
+        double gpa = 2.5;
+        System.out.printf("%s is %d years old and has a %f gpa.", name, yearsOld, gpa);
+        // John is 35 years old and has a 2.5 gpa.
+
+        // You can also use it for alignment purposes. %Wd (integer, W characters wide, right aligned)
+        // %-Wd (integer, W characters wide, left aligned), %Wf (real, W characters wide, right aligned)
+        // We can see this when we create a times table:
+        for (int i=1; i<15; i++){
+            for (int j=1; j<=15; j++){
+                System.out.printf("%4d", (i*j)); // Each number will be 4 spaces apart and will be right aligned
+            }
+            System.out.println();
+        }
+        // You can even use it for rounding! %.Df (real number, rounded to D digits after the decimal)
+        double length = 3.2432;
+        System.out.printf("The length is %.1f feet\n", length); //The length is 3.2 feet
+
+        // Can you figure out what %W.Df does ?????
     }
 
-    public static int returnExample(int a, int b){
+    // public static int returnGreaterBad1(int a, int b){
+    //     if (a>b){
+    //         return a;
+    //     }// Error, not all paths return a value!
+    // }
+
+    // public static int returnGreaterBad2(int a, int b){
+    //     if (a>b){
+    //         return a;
+    //     }else if ((a == b) || (b > a)){
+    //         return b;
+    //     }
+    // } // This also suprisingly will not work even though technically it should be on or the other.
+    // The compiler thinks there is a possibility that we won't enter either of these.
+
+    public static int returnGreaterGood(int a, int b){
         if (a>b){
             return a;
-        }// wont compile!!
-    }
+        }else {
+            return b;
+        }
+    } // This works since "else" functions as the default
 }

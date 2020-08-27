@@ -20,7 +20,8 @@ class Project7 {
         7. What is your state of residence?
         8. How would you describe your condition in a sinlge sentence?
 
-        Upon completion of the questions, a report must be displayed with these fields in this order:
+        Upon completion of the questions, a report must be displayed with these fields in this order. Please make sure you are using
+        print formatting when necessary as described in class:
         Name - full name
         Age - age
         Age classification - 'Child' if under 18. "Adult" if 18 or older
