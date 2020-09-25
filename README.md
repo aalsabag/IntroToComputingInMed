@@ -1,7 +1,8 @@
 # Into to Computing in Medicine
 
 This is an intro to programming course in the Java programming language designed for those in the medical field. 
-Java is an object oriented programming language and is one of the most widely used languages to date.
+Java is an object oriented programming language and is one of the most widely used languages to date. This course
+is based on the CS312 course at the University of Texas taught by [Mike Scott](https://www.cs.utexas.edu/~scottm/cs312). 
 
 ## In each folder you will see:
 
