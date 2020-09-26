@@ -1,3 +1,4 @@
+import java.util.*;
 public class lesson9 {
     public static void main(String args[]){
         System.out.println("Hello World!");
@@ -82,6 +83,21 @@ public class lesson9 {
         }
         console.close(); // close the scanner now that we are out of the loop
 
+        //Random numbers
+        // In order to generate a random number, we need to use the Random class in java.util
+        // Instantiate the class
+        Random r = new Random();
+        int randomNumber = rand.nextInt(10); //returns random integer from 0-9
 
+        // How can we get a number between 100 and 200 though
+        // simple math
+        randomNumber = rand.nextInt(100) + 100;
+
+        int randomDouble = rand.nextDouble(); // returns random real number in range [0.0, 1.0)
+        // What if I want a real number that's greater than 1.0
+        // just multiply by the factor you want
+        randomDouble = rand.nextDouble()*10; // Real number between 0 and 10
+
+        
     }
 }
